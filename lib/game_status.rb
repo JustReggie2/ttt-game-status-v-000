@@ -63,7 +63,7 @@ def winner(board)
     return nil
   end
 end
-end
+
 
 #elsif board[winner[0]] == "O"
   #return "O"

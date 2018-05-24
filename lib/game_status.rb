@@ -60,8 +60,8 @@ def winner(board)
     if board[winner[0]] == "X" || board[winner[0]] == "O"
       return board[winner[0]]
     end
-    return nil
   end
+end
 end
 
 

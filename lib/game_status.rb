@@ -1,5 +1,5 @@
 # Helper Method
-require 'pry'
+#require 'pry'
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
@@ -54,7 +54,7 @@ end
 #if won?(board) is true and equal to "O" return "O"
 #if !won?(board) return nil
 def winner(board)
-  binding.pry
+  #binding.pry
   if won?(board).class == Array
     won?(board).each do |winner|
     if board[winner[0]] == "X" || board[winner[0]] == "O"

@@ -57,12 +57,15 @@ def winner(board)
   binding.pry
   if won?(board).class == Array
     won?(board).each do |winner|
-    return board[winner[0]]
-  end
+    if board[winner[0]] == "X" || board[winner[0]] == "O"
+      return board[winner[0]]
+    end
   else
     return nil
   end
 end
+
+
 #elsif board[winner[0]] == "O"
   #return "O"
 #end
